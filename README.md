@@ -59,7 +59,7 @@ Additionally, to build the documentation (`notebooks`, `sphinx`) and for package
 
 ## Getting started
 
-We recommend starting with the [introductory guide](https://opensource.nibr.com/torchsurv/notebooks/introduction.html), where you'll find an overview of the package's functionalities.
+We recommend starting with the [introductory guide](https://opensource.nibr.com/torchsurv/notebooks/introduction.html) section of the [user manual](https://opensource.nibr.com/torchsurv/index.html#), where you'll find an overview of the package's functionalities.
 
 ### Survival data
 
