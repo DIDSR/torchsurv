@@ -193,10 +193,15 @@ The table below compares the functionalities of `TorchSurv` with those of
 [deepsurv](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-018-0482-1).
 While several libraries offer survival modelling functionalities, no existing library provides the flexibility to use a custom PyTorch-based neural networks to define the survival model parameters.
 
-The outputs of both the log-likelihood functions and the evaluation metrics functions have undergone thorough comparison with benchmarks generated using Python packages and R packages. The comparisons are summarised in the [Related packages summary](https://opensource.nibr.com/torchsurv/benchmarks.html).
+The outputs of both the log-likelihood functions and the evaluation metrics functions have **undergone thorough comparison with benchmarks generated** using `Python` and `R` packages. The comparisons (at time of publication) are summarised in the [Related packages summary](https://opensource.nibr.com/torchsurv/benchmarks.html).
 
 ![Survival analysis libraries in Python](docs/source/table_python_benchmark.png)
 ![Survival analysis libraries in Python](docs/source/table_python_benchmark_legend.png)
+
+Survival analysis libraries in R. For obtaining the evaluation metrics, packages `survival`, `riskRegression`, `SurvMetrics` and `pec` require the fitted model object as input (a specific object format) and `RisksetROC` imposes a smoothing method. Packages `timeROC`, `riskRegression` and pec force the user to choose a form for subject-specific
+weights (e.g., inverse probability of censoring weighting (IPCW)). Packages `survcomp` and `SurvivalROC` do not implement the general AUC but the censoring-adjusted AUC estimator proposed by Heagerty et al. (2000).
+
+![Survival analysis libraries in R](docs/source/table_r_benchmark.png)
 
 ## Contributing
 
